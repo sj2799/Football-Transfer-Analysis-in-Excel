@@ -26,6 +26,7 @@ This project is built entirely in Microsoft Excel, leveraging the following feat
 - VLOOKUP / Cross-sheet referencing — Populated the `Continent` columns in the `Database` sheet from the `Countries` reference table
 
 2. Excel Functions:
+   
 | Function | Usage |
 |---|---|
 | `SUMIFS` | Aggregate transfer counts and dollar values by season, country, and continent |
