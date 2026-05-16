@@ -6,28 +6,32 @@ This project explores the economic patterns behind international football (socce
 
 **🗂️ Project Structure**
 The workbook is organized across 6 sheets, each serving a distinct analytical purpose:
-Sheet | Purpose
-Database:  Master dataset of all transfer records for both seasons
-Countries:  Reference table mapping each country to its continent
-European Analysis:  Summary of total transfers in/out of Europe by season
-European Analysis Transfer:  Net transfer movements (count & value) for each European country
-Top 5 Country:  Ranking of top 5 European countries by incoming transfer spend in 2022/2023
-Visualization Top 5 Countries:  Chart-ready table with transfer counts and average fees for the top 5
+
+| Sheet | Purpose |
+|---|---|
+| `Database` | Master dataset of all transfer records for both seasons |
+| `Countries` | Reference table mapping each country to its continent |
+| `European Analysis` | Summary of total transfers in/out of Europe by season |
+| `European Analysis Transfer` | Net transfer movements (count & value) for each European country |
+| `Top 5 Country` | Ranking of top 5 European countries by incoming transfer spend in 2022/2023 |
+| `Visualization Top 5 Countries` | Chart-ready table with transfer counts and average fees for the top 5 |
 
 **🔧 Tech Stack / Formulas Used**
 This project is built entirely in Microsoft Excel, leveraging the following features and functions:
 
 1. Data Preparation
-Text to Columns — Split combined country-continent data in the Countries sheet into separate, usable columns
-Header Filters — Used to scan the Season column for data inconsistencies
-Find & Replace — Corrected erroneous season year entries across the database
-VLOOKUP / Cross-sheet referencing — Populated the Continent columns in the Database sheet from the Countries reference table
+- Text to Columns — Split combined country-continent data in the `Countries` sheet into separate, usable columns
+- Header Filters — Used to scan the `Season` column for data inconsistencies
+- Find & Replace — Corrected erroneous season year entries across the database
+- VLOOKUP / Cross-sheet referencing — Populated the `Continent` columns in the `Database` sheet from the `Countries` reference table
 
 2. Excel Functions:
-SUMIFS: Aggregate transfer counts and dollar values by season, country, and continent
-SUMIF: Pull season-specific transfer data into the visualization table
-RANK: Rank European countries by total incoming transfer spend in 2022/2023
-Arithmetic operators (+, -, /): Calculate net transfers (incoming − outgoing) and average transfer fees
+| Function | Usage |
+|---|---|
+| `SUMIFS` | Aggregate transfer counts and dollar values by season, country, and continent |
+| `SUMIF` | Pull season-specific transfer data into the visualization table |
+| `RANK` | Rank European countries by total incoming transfer spend in 2022/2023 |
+| Arithmetic operators (`+`, `-`, `/`) | Calculate net transfers (incoming − outgoing) and average transfer fees |
 
 3. Visualization:
 Combo Chart (Clustered Column + Line with Secondary Axis) — Displays number of incoming transfers (primary axis) alongside average transfer fee per player (secondary axis) for the top 5 European countries
